@@ -23,14 +23,29 @@
   <title>Melanie Pizano | Data Analyst</title>
 
 <style>
-  /* Increase card height and refine description font size */
+  /* Increase card height */
   #projects .card.medium {
-    height: 460px !important;
+    height: 480px !important;
+  }
+
+  /* Make front of project card scrollable if content overflows */
+  #projects .card .card-content {
+    height: calc(100% - 220px);
+    overflow-y: auto !important;
   }
   
-  #projects .card .card-content p {
-    font-size: 0.88rem !important;
+  /* Shrink project titles on front of cards */
+  #projects .card .card-content .card-title {
+    font-size: 1.1rem !important;
     line-height: 1.3 !important;
+    font-weight: 500;
+  }
+
+  /* Refine description text size and spacing */
+  #projects .card .card-content p {
+    font-size: 0.85rem !important;
+    line-height: 1.35 !important;
+    margin-top: 8px;
   }
 </style>
 
@@ -399,10 +414,10 @@
                 <img alt="Household size prediction project screenshot" src="/assets/img/houses-image.jpg" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Household size prediction using Amazon purchase history<i
+                <span class="card-title activator teal-text hoverline">Predicting household size with purchase history<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  Conducted feature engineering on survey and purchase data to build model variables, then evaluated and optimized multiple machine learning models to select the top-performing classifier. 
+                  Feature engineering and evaluation of multiple models to select the top-performing classifier. 
                 </p>
               </div>
               <div class="card-reveal" style="max-height: 100%; overflow-y: auto !important;">
@@ -433,7 +448,7 @@
                 <span class="card-title activator teal-text hoverline">Gender-Coded Language Analysis<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  Co-developed an end-to-end NLP and statistical pipeline in Python to analyze how gender-coded language ("masculine" vs. "feminine" diction) in STEM and Humanities job descriptions contributes to occupational gender disparity. 
+                  Co-developed an end-to-end NLP pipeline to analyze how gender-coded language in STEM and Humanities job descriptions contributes to occupational gender disparity. 
                 </p>
               </div>
               <div class="card-reveal" style="max-height: 100%; overflow-y: auto !important;">
@@ -497,10 +512,10 @@
                 <img alt="Indoor air quality analysis project screenshot" src="/assets/img/IAQ-image.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">UCLA Residential Indoor Air Quality Analysis<i
+                <span class="card-title activator teal-text hoverline">UCLA Residential IAQ Analysis<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  Conducted an environmental justice-centered, research study assessing student-perceived Indoor Air Quality (IAQ) and respiratory health symptoms across various residential dormitories at UCLA. This project combined public health analysis and social advocacy to uncover built-environment infrastructure disparities in higher education facilities.
+                  An environmental justice-centered research study assessing student-perceived Indoor Air Quality and respiratory health symptoms across various residential dormitories at UCLA. 
                 </p>
               </div>
               <div class="card-reveal" style="max-height: 100%; overflow-y: auto !important;">
@@ -531,10 +546,10 @@
                 <img alt="Predictive anti-success modeling project screenshot" src="/assets/img/dataathon-intro.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Predictive Anti-Success Modeling for Film ROI<i
+                <span class="card-title activator teal-text hoverline">Predictive Anti-Success Modeling for Film<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  Collaborated in a 3-person team during a intensive Datathon to design a reverse-engineered strategy aimed at maximizing film failure, specifically on the basis of minimizing ratings and financial ROI.
+                  Team Datathon project with a strategy aimed at maximizing film failure, specifically on the basis of minimizing ratings and financial ROI.
                 </p>
               </div>
               <div class="card-reveal" style="max-height: 100%; overflow-y: auto !important;">
@@ -568,7 +583,7 @@
                 <span class="card-title activator teal-text hoverline">Global Data Science Compensation & Labor Equity Analysis<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  Collaborated on a comprehensive research project analyzing a global dataset of 6,165 data science professionals from aijobs.net to map industry compensation trends, regional wage gaps, and labor inequalities from 2020 to 2025. The research investigated how macroeconomic shifts, remote work, and industry disruptions impact global hiring norms and salary structures. 
+                  Comprehensive research project mapping industry compensation trends, regional wage gaps, and labor inequalities from 2020 to 2025. 
                 </p>
               </div>
               <div class="card-reveal" style="max-height: 100%; overflow-y: auto !important;">
@@ -602,10 +617,10 @@
                 <img alt="Liver allocation policy study screenshot" src="/assets/img/image-from-policypaper.png" style="height: 100%; width: 100%; object-fit: contain;" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Evaluating the 2020 US Liver Allocation Policy Transition<i
+                <span class="card-title activator teal-text hoverline">Liver Allocation Policy Transition<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  Conducted an independent, quantitative correlational research study evaluating the real-world impact of the United Network for Organ Sharing (UNOS) 2020 transition from Donation Service Areas (DSAs) to the "acuity circles" framework. The study specifically analyzed transplant costs, recipient demographics, and hospital lengths of stay for patients aged 18–64 within OPTN Region 5 (California-San Diego).
+                  An independent, quantitative correlational research study evaluating the impact of the UNOS 2020 transition from DSAs to the "acuity circles" framework.
                 </p>
               </div>
               <div class="card-reveal" style="max-height: 100%; overflow-y: auto !important;">
@@ -632,7 +647,6 @@
     </section>
 
 <!-- Fifth Section: Skills -->
-    <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text teal">Skills</h3>
       <div class="container">
@@ -642,10 +656,10 @@
           <div class="card-content">
             <h4 class="brown-text light">Languages</h4>
             <div class="row">
-              <div class="col s6 m3 center-align" style="margin-bottom: 12px;">Python</div>
-              <div class="col s6 m3 center-align" style="margin-bottom: 12px;">R</div>
-              <div class="col s6 m3 center-align" style="margin-bottom: 12px;">SQL</div>
-              <div class="col s6 m3 center-align" style="margin-bottom: 12px;">Spanish</div>
+              <div class="col s6 m3 center-align" style="margin-bottom: 12px; font-weight: normal;">Python</div>
+              <div class="col s6 m3 center-align" style="margin-bottom: 12px; font-weight: normal;">R</div>
+              <div class="col s6 m3 center-align" style="margin-bottom: 12px; font-weight: normal;">SQL</div>
+              <div class="col s6 m3 center-align" style="margin-bottom: 12px; font-weight: normal;">Spanish</div>
             </div>
           </div>
         </div>
@@ -702,10 +716,7 @@
           </div>
         </div>
 
-      </div>
-    </section>
-
-<!-- Certifications -->
+        <!-- Certifications -->
         <div class="card">
           <div class="card-content">
             <h4 class="brown-text light">Certificates</h4>
@@ -765,7 +776,7 @@
 
       </div>
     </section>
-
+    
     <!-- Seventh Section: Education -->
     <section id="education" class="section scrollspy">
       <h3 class="page-title white-text teal">Education</h3>
